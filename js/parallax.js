@@ -1,4 +1,4 @@
-var ParallaxManager, ParallaxPart;
+let ParallaxManager, ParallaxPart;
 
 ParallaxPart = (function () {
   function ParallaxPart(el) {
@@ -9,7 +9,7 @@ ParallaxPart = (function () {
 
   ParallaxPart.prototype.update = function (scrollY) {
     if (scrollY > this.maxScroll) { return; }
-    var offset = -(scrollY * this.speed);
+    let offset = -(scrollY * this.speed);
     this.setYTransform(offset);
   };
 
@@ -43,7 +43,7 @@ ParallaxManager = (function () {
     } else {
       throw new Error("Parallax: Element variable is not a querySelector string, Array, or NodeList");
     }
-    for (var i in this.elements) {
+    for (let i in this.elements) {
       this.parts.push(new ParallaxPart(this.elements[i]));
     }
     window.addEventListener("scroll", this.onScroll.bind(this));
@@ -54,8 +54,8 @@ ParallaxManager = (function () {
   };
 
   ParallaxManager.prototype.scrollHandler = function () {
-    var scrollY = Math.max(window.pageYOffset, 0);
-    for (var i in this.parts) { this.parts[i].update(scrollY); }
+    let scrollY = Math.max(window.pageYOffset, 0);
+    for (let i in this.parts) { this.parts[i].update(scrollY); }
   };
 
   return ParallaxManager;
