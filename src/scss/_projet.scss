@@ -23,3 +23,49 @@
         }
     }
 }
+.trait {
+    @include lines;
+    margin: 2% 4%;
+}
+.project {
+    display: flex;
+    width: 100%;
+    h1 {
+        width: 40%;
+        font-size: 22px;
+    }
+    p {
+        width: 50%;
+        line-height: 1.5;
+        font-size: 18px;
+        margin-left: 10%;
+
+    }
+}
+.project_images {
+    display: flex;
+    justify-content: space-around;
+    img {
+        width: 25%;
+        height: 100%;
+        margin: 5%;
+   
+    }
+}
+#second {
+    @include lines;
+    margin: 4% auto;
+}
+.solar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    h1 {
+        font-size: 22px;
+        margin: auto;
+        text-align: center;
+    }
+    p{
+       margin: 2% 5%;
+    }
+}

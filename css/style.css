@@ -43,6 +43,51 @@ a {
     line-height: 1.5;
     font-size: 18px; }
 
+.trait {
+  display: flex;
+  width: 60px;
+  height: 2px;
+  background: grey;
+  margin: 2% 4%; }
+
+.project {
+  display: flex;
+  width: 100%; }
+  .project h1 {
+    width: 40%;
+    font-size: 22px; }
+  .project p {
+    width: 50%;
+    line-height: 1.5;
+    font-size: 18px;
+    margin-left: 10%; }
+
+.project_images {
+  display: flex;
+  justify-content: space-around; }
+  .project_images img {
+    width: 25%;
+    height: 100%;
+    margin: 5%; }
+
+#second {
+  display: flex;
+  width: 60px;
+  height: 2px;
+  background: grey;
+  margin: 4% auto; }
+
+.solar {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .solar h1 {
+    font-size: 22px;
+    margin: auto;
+    text-align: center; }
+  .solar p {
+    margin: 2% 5%; }
+
 header {
   display: flex;
   margin: 0;
