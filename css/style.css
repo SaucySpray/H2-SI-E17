@@ -23,8 +23,25 @@ a {
   width: 100%;
   min-height: 1080px; }
 
-p {
-  color: red; }
+.container {
+  width: 1080px;
+  margin: 0 auto;
+  font-family: "Futura Book"; }
+
+.story {
+  display: flex;
+  margin: auto;
+  margin-top: 15%; }
+  .story img {
+    margin-top: 10%;
+    width: 40%;
+    height: 100%; }
+  .story .story_content h1 {
+    margin-bottom: 8%; }
+  .story .story_content p {
+    width: 90%;
+    line-height: 1.5;
+    font-size: 18px; }
 
 header {
   display: flex;

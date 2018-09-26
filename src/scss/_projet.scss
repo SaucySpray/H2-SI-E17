@@ -1,3 +1,25 @@
-p {
-    color: red;
+.container {
+    width: 1080px;
+    margin: 0 auto;
+    font-family: "Futura Book";
+}
+.story {
+    display:flex;
+    margin: auto;
+    margin-top: 15%;
+    img {
+        margin-top: 10%;
+        width: 40%;
+        height: 100%;
+    }
+    .story_content {
+        h1 {
+            margin-bottom: 8%;
+        }
+        p {
+            width: 90%;
+            line-height: 1.5;
+            font-size: 18px;
+        }
+    }
 }
