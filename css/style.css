@@ -23,6 +23,9 @@ a {
   width: 100%;
   min-height: 1080px; }
 
+p {
+  color: red; }
+
 header {
   display: flex;
   margin: 0;
