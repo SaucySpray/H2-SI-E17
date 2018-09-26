@@ -84,9 +84,18 @@ a {
   .solar h1 {
     font-size: 22px;
     margin: auto;
-    text-align: center; }
-  .solar p {
-    margin: 2% 5%; }
+    text-align: center;
+    margin-bottom: 4%; }
+
+button {
+  background: #EAB61C;
+  border-radius: 100px;
+  border: none;
+  padding: 1% 3%;
+  display: flex;
+  margin: 5% auto; }
+  button a {
+    color: white; }
 
 header {
   display: flex;
