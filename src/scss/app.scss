@@ -1,1 +1,5 @@
-@import "config"
+@import "config";
+@import "body";
+@import "header/header";
+@import "parallax/parallax";
+//Importez vos feuilles de style ici (ne rien importer avant "config")

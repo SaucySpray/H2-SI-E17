@@ -1,3 +1,142 @@
+/* COLORS */
+/* FONTS */
+@font-face {
+  font-family: "Futura Book";
+  src: url("../medias/fonts/FuturaBook.ttf"); }
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  list-style: none; }
 
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.content {
+  position: absolute;
+  top: 982px;
+  background: #201800;
+  width: 100%;
+  min-height: 1080px; }
+
+header {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 60px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.25);
+  z-index: 50;
+  top: 0;
+  overflow: hidden;
+  position: fixed; }
+
+.header-logo {
+  display: flex;
+  width: 84px;
+  height: 36px;
+  background-image: url("../medias/img/logo.svg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.header-nav {
+  display: flex;
+  width: 460px;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row; }
+
+.header-nav-el {
+  display: flex;
+  width: auto;
+  height: 100%;
+  padding: 2px 4px;
+  justify-content: center;
+  align-items: center;
+  color: #EAB61C;
+  font-family: "Futura Book", "Arial", sans-serif;
+  font-size: 18px; }
+
+.kickstarter {
+  display: flex;
+  width: 154px;
+  height: 15px;
+  background-image: url("../medias/img/kickstarter.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.parallax-container {
+  position: fixed;
+  overflow: visible;
+  width: 100%;
+  height: 1080px; }
+
+.parallax-layer {
+  width: 100%;
+  height: 520px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.layer-0 {
+  top: 0px;
+  z-index: 0;
+  background: #ffffff url("../medias/img/01_ciel.svg") center;
+  background-size: cover; }
+
+.layer-1 {
+  top: 140px;
+  z-index: 5;
+  background-image: url("../medias/img/02_soleil.svg");
+  background-size: 1500px; }
+
+.layer-2 {
+  top: 130px;
+  z-index: 5;
+  background-image: url("../medias/img/yolk.svg");
+  background-size: cover; }
+
+.layer-3 {
+  top: -100px;
+  z-index: 10;
+  background-image: url("../medias/img/03_nuages.svg");
+  background-size: 1800px; }
+
+.layer-4 {
+  top: 140px;
+  z-index: 15;
+  background-image: url("../medias/img/04_montage-fond.svg");
+  background-size: 1920px; }
+
+.layer-5 {
+  top: 440px;
+  z-index: 20;
+  background-image: url("../medias/img/05_montage-avant.svg"); }
+
+.layer-6 {
+  top: 500px;
+  z-index: 25;
+  background-image: url("../medias/img/06_arbres-fond.svg"); }
+
+.layer-7 {
+  top: 500px;
+  z-index: 30;
+  background-image: url("../medias/img/07_arbres-milieu.svg"); }
+
+.layer-8 {
+  top: 460px;
+  z-index: 35;
+  background-image: url("../medias/img/08_arbres-avant.svg"); }
 
 /*# sourceMappingURL=style.css.map */
