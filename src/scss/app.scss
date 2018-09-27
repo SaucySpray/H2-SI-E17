@@ -1,9 +1,9 @@
 @import "config";
 @import "responsive";
 @import "body";
-@import "header/header";
-@import "parallax/parallax";
+@import "header";
+@import "parallax";
 @import "project";
-@import "model/model";
+@import "model";
 @import "carrousel";
-/*Importez vos feuilles de style ici (ne rien importer avant "config")*/
+/*Import stylesheet here (don't import stylesheet before "config")*/

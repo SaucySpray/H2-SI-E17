@@ -63,3 +63,5 @@ ParallaxManager = (function () {
 })();
 
 new ParallaxManager(".parallax-layer");
+
+//Made with the help of the great Hamish Macpherson's article on medium
