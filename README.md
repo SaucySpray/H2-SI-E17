@@ -1,6 +1,8 @@
 # H2 - Semaine Intensive n°1 - Equipe 17 :shipit:
 
 ### Built With
+- HTML5
+- JavaScript
 - [SASS](https://sass-lang.com/)
 - [BabylonJS](https://www.babylonjs.com/)
 
@@ -23,10 +25,10 @@ And that should fix the problem !
 Also, you'll need a **[SASS compiler](http://koala-app.com/)** to edit our website.
 
 ### Authors
-- Alexandre Chabeau
-- Yoan Gross
-- Constance Devanne
-- Florian Brunet
+- **Alexandre Chabeau**
+- **Yoan Gross**
+- **Constance Devanne**
+- **Florian Brunet**
 
 We know it's far from perfect, but it was a limited time project and we learned a lot !
 
