@@ -48,7 +48,7 @@ var delayCreateScene = function () {
       return scene;
     })
   )
-
+  //TODO : Create var for each mesh & .dispose() them after click
   BABYLON.SceneLoader.Append("../medias/models/", "speaker.glb", scene, function (scene) {
     scene.createDefaultCameraOrLight(true, true, true);
     scene.activeCamera.alpha += Math.PI;
