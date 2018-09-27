@@ -36,6 +36,8 @@ var delayCreateScene = function () {
     // Rotate the camera by 180 degrees to the front of the asset.
     scene.activeCamera.alpha += Math.PI;
   });
+  return scene;
+
 }
 var engine = new BABYLON.Engine(canvas, true, { preserveDrawingBuffer: true, stencil: true });
 var scene = delayCreateScene();
