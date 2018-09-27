@@ -17,9 +17,12 @@ a {
   text-decoration: none; }
 
 .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   top: 982px;
-  background: #201800;
+  background: radial-gradient(closest-side at 50% 55%, #2B200A, #201800);
   width: 100%;
   height: 100vh; }
 
@@ -48,26 +51,46 @@ header {
 
 .header-nav {
   display: flex;
-  width: 460px;
+  width: 380px;
   height: 100%;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row; }
+  flex-direction: row;
+  overflow: hidden; }
 
 .header-nav-el {
   display: flex;
   width: auto;
   height: 100%;
-  padding: 2px 4px;
   justify-content: center;
   align-items: center;
   color: #EAB61C;
   font-family: "Futura Book", "Arial", sans-serif;
-  font-size: 18px; }
+  font-size: 18px;
+  z-index: 55;
+  transition: ease-in 0.2s; }
+
+.header-nav-el:hover:not(:last-child) {
+  color: white; }
+
+.header-nav-el span::after {
+  content: "";
+  background: #fff;
+  display: block;
+  width: 0;
+  height: 4px;
+  transition: ease-in 0.2s; }
+
+.header-nav-el span:hover::after {
+  content: "";
+  background: #fff;
+  display: block;
+  width: 100%;
+  height: 4px; }
 
 .kickstarter {
   display: flex;
-  width: 154px;
+  width: 128px;
   height: 15px;
   background-image: url("../medias/img/kickstarter.png");
   background-size: cover;
@@ -120,7 +143,7 @@ header {
   background-size: 1920px; }
 
 .layer-5 {
-  top: 440px;
+  top: 400px;
   z-index: 20;
   background-image: url("../medias/img/05_montage-avant.svg"); }
 
@@ -277,8 +300,8 @@ header {
   height: 40px; }
 
 #renderCanvas {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   touch-action: none;
   position: absolute;
   z-index: 100; }

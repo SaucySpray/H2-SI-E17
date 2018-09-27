@@ -1,0 +1,311 @@
+/* COLORS */
+/* FONTS */
+@font-face {
+  font-family: "Futura Book";
+  src: url("../medias/fonts/FuturaBook.ttf"); }
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  list-style: none; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 982px;
+  background: radial-gradient(closest-side at 50% 55%, #2B200A, #201800);
+  width: 100%;
+  height: 100vh; }
+
+header {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 60px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.25);
+  z-index: 50;
+  top: 0;
+  overflow: hidden;
+  position: fixed; }
+
+.header-logo {
+  display: flex;
+  width: 84px;
+  height: 36px;
+  background-image: url("../medias/img/logo.svg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.header-nav {
+  display: flex;
+  width: 380px;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden; }
+
+.header-nav-el {
+  display: flex;
+  width: auto;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #EAB61C;
+  font-family: "Futura Book", "Arial", sans-serif;
+  font-size: 18px;
+  z-index: 55;
+  transition: ease-in 0.2s; }
+
+.header-nav-el span:hover:not(:last-child) {
+  color: white; }
+
+.header-nav-el span::after {
+  content: "";
+  background: #fff;
+  display: block;
+  width: 0;
+  height: 4px;
+  transition: ease-in 0.2s; }
+
+.header-nav-el span:hover::after {
+  content: "";
+  background: #fff;
+  display: block;
+  width: 100%;
+  height: 4px; }
+
+.kickstarter {
+  display: flex;
+  width: 128px;
+  height: 15px;
+  background-image: url("../medias/img/kickstarter.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.parallax-container {
+  position: fixed;
+  overflow: visible;
+  width: 100%;
+  height: 1080px; }
+
+.parallax-layer {
+  width: 100%;
+  height: 520px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.layer-0 {
+  top: 0px;
+  z-index: 0;
+  background: #ffffff url("../medias/img/01_ciel.svg") center;
+  background-size: cover; }
+
+.layer-1 {
+  top: 140px;
+  z-index: 5;
+  background-image: url("../medias/img/02_soleil.svg");
+  background-size: 1500px; }
+
+.layer-2 {
+  top: 130px;
+  z-index: 5;
+  background-image: url("../medias/img/yolk.svg");
+  background-size: cover; }
+
+.layer-3 {
+  top: -100px;
+  z-index: 10;
+  background-image: url("../medias/img/03_nuages.svg");
+  background-size: 1800px; }
+
+.layer-4 {
+  top: 140px;
+  z-index: 15;
+  background-image: url("../medias/img/04_montage-fond.svg");
+  background-size: 1920px; }
+
+.layer-5 {
+  top: 400px;
+  z-index: 20;
+  background-image: url("../medias/img/05_montage-avant.svg"); }
+
+.layer-6 {
+  top: 500px;
+  z-index: 25;
+  background-image: url("../medias/img/06_arbres-fond.svg"); }
+
+.layer-7 {
+  top: 500px;
+  z-index: 30;
+  background-image: url("../medias/img/07_arbres-milieu.svg"); }
+
+.layer-8 {
+  top: 460px;
+  z-index: 35;
+  background-image: url("../medias/img/08_arbres-avant.svg"); }
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  font-family: "Futura Book"; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+      width: 80%; } }
+  @media (min-width: 414px) and (max-width: 767px) {
+    .container {
+      width: 90%; } }
+
+.story {
+  display: flex;
+  margin: auto;
+  margin-top: 6rem; }
+  @media (min-width: 414px) and (max-width: 767px) {
+    .story {
+      display: block; } }
+  .story img {
+    margin-top: 10%;
+    width: 40%;
+    height: 100%; }
+    @media (min-width: 414px) and (max-width: 767px) {
+      .story img {
+        display: none; } }
+  .story .story_content h1 {
+    margin-bottom: 8%; }
+    @media (min-width: 414px) and (max-width: 767px) {
+      .story .story_content h1 {
+        display: flex;
+        margin: auto;
+        font-size: 22px; } }
+  .story .story_content p {
+    width: 90%;
+    line-height: 1.5;
+    font-size: 18px; }
+    @media (min-width: 414px) and (max-width: 767px) {
+      .story .story_content p {
+        width: 100%;
+        font-size: 14px; } }
+
+.trait {
+  display: flex;
+  width: 60px;
+  height: 2px;
+  background: grey;
+  margin: 2% 4%; }
+  @media (min-width: 414px) and (max-width: 767px) {
+    .trait {
+      margin: 8% auto; } }
+
+.project {
+  display: flex;
+  width: 100%; }
+  @media (min-width: 414px) and (max-width: 767px) {
+    .project {
+      display: block; } }
+  .project h1 {
+    width: 40%;
+    font-size: 22px; }
+    @media (min-width: 414px) and (max-width: 767px) {
+      .project h1 {
+        display: flex;
+        margin: 5% auto;
+        width: 100%;
+        font-size: 18px; } }
+    @media (min-width: 320px) and (max-width: 413px) {
+      .project h1 {
+        display: flex;
+        margin: 2% auto;
+        width: 100%;
+        font-size: 18px; } }
+  .project p {
+    width: 50%;
+    line-height: 1.5;
+    font-size: 18px;
+    margin-left: 10%; }
+    @media (min-width: 414px) and (max-width: 767px) {
+      .project p {
+        width: 100%;
+        font-size: 14px;
+        margin: 0; } }
+
+.project_images {
+  display: flex;
+  justify-content: space-around; }
+  @media (min-width: 414px) and (max-width: 767px) {
+    .project_images {
+      flex-direction: column; } }
+  .project_images img {
+    width: 25%;
+    height: 100%;
+    margin: 5%; }
+    @media (min-width: 414px) and (max-width: 767px) {
+      .project_images img {
+        margin: 3% auto;
+        width: 75%;
+        height: 100%; } }
+
+#second {
+  display: flex;
+  width: 60px;
+  height: 2px;
+  background: grey;
+  margin: 4% auto; }
+  @media (min-width: 414px) and (max-width: 767px) {
+    #second {
+      margin: 8% auto; } }
+
+.solar {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .solar h1 {
+    font-size: 22px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 4%; }
+    @media (min-width: 414px) and (max-width: 767px) {
+      .solar h1 {
+        width: 100%;
+        font-size: 18px; } }
+  @media (min-width: 414px) and (max-width: 767px) {
+    .solar p {
+      font-size: 14px; } }
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto;
+  background: #EAB61C;
+  border-radius: 100px;
+  color: white;
+  width: 260px;
+  height: 40px; }
+
+#renderCanvas {
+  width: 80%;
+  height: 80%;
+  touch-action: none;
+  position: absolute;
+  z-index: 100; }
+
+/*Importez vos feuilles de style ici (ne rien importer avant "config")*/
+
+/*# sourceMappingURL=app.css.map */

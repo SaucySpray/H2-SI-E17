@@ -1,3 +1,10 @@
+@mixin lines {
+  display: flex;
+  width: 60px;
+  height: 2px;
+  background: grey;
+}
+
 .container {
   width: 70%;
   margin: 0 auto;
