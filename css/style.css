@@ -21,7 +21,7 @@ a {
   top: 982px;
   background: #201800;
   width: 100%;
-  min-height: 1080px; }
+  height: 100vh; }
 
 header {
   display: flex;
