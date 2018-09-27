@@ -3,9 +3,12 @@ var canvas = document.getElementById("renderCanvas");
 var delayCreateScene = function () {
   // Create a scene.
   var scene = new BABYLON.Scene(engine);
-  var camera = new BABYLON.FreeCamera("sceneCamera", new BABYLON.Vector3(0, 1, -15), scene);
+
+  var camera = new BABYLON.ArcRotateCamera("cam", 4.7, 1.2, 20, BABYLON.Vector3.Zero());
+  camera.attachControl(canvas, true);
+  camera.useBouncingBehavior = true;
+  camera.useAutoRotationBehavior = true;
   camera.inputs.add(new BABYLON.FreeCameraGamepadInput());
-  camera.inputs.attached.gamepad.gamepadAngularSensibility = 250;
 
   // Create a default skybox with an environment.
   scene.clearColor = new BABYLON.Color4(0, 0, 0, 0.0000000000000001);
