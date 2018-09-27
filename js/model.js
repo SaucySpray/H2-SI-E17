@@ -5,6 +5,7 @@ var delayCreateScene = function () {
   var scene = new BABYLON.Scene(engine);
   var camera = new BABYLON.ArcRotateCamera("Camera", 3 * Math.PI / 2.5, -Math.PI / 5, 100, BABYLON.Vector3.Zero(), scene);
   camera.setTarget(new BABYLON.Vector3(speaker));
+  camera.attachControl(canvas, true);
   // Create a default skybox with an environment.
   scene.clearColor = new BABYLON.Color4(0, 0, 0, 0.0000000000000001);
 
