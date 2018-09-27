@@ -5,8 +5,7 @@ var delayCreateScene = function () {
   var scene = new BABYLON.Scene(engine);
 
   // Create a default skybox with an environment.
-  var hdrTexture = BABYLON.CubeTexture.CreateFromPrefilteredData("textures/environment.dds", scene);
-  var currentSkybox = scene.createDefaultSkybox(hdrTexture, true);
+  scene.clearColor = new BABYLON.Color4(0, 0, 0, 0.0000000000000001);
 
   // Append glTF model to scene.
   BABYLON.SceneLoader.Append("medias/models/", "light.glb", scene, function (scene) {
