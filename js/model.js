@@ -3,6 +3,9 @@ var canvas = document.getElementById("renderCanvas");
 var delayCreateScene = function () {
   // Create a scene.
   var scene = new BABYLON.Scene(engine);
+  var camera = new BABYLON.FreeCamera("sceneCamera", new BABYLON.Vector3(0, 1, -15), scene);
+camera.inputs.add(new BABYLON.FreeCameraGamepadInput());
+camera.inputs.attached.gamepad.gamepadAngularSensibility = 250;
 
   // Create a default skybox with an environment.
   scene.clearColor = new BABYLON.Color4(0, 0, 0, 0.0000000000000001);
