@@ -1,4 +1,5 @@
 var canvas = document.querySelector("#renderCanvas");
+var popCanvas = document.querySelector("#popCanvas");
 var btn1, btn2, btn3;
 
 btn1 = document.querySelector(".nav-btn-1");
@@ -53,7 +54,7 @@ var delayCreateScene = function () {
     scene.createDefaultCameraOrLight(true, true, true);
     scene.activeCamera.alpha += Math.PI;
   });
-  return scene;
+  }
 
 }
 var engine = new BABYLON.Engine(canvas, true, { preserveDrawingBuffer: true, stencil: true });
@@ -69,3 +70,16 @@ engine.runRenderLoop(function () {
 window.addEventListener("resize", function () {
   engine.resize();
 });
+
+//On click add description
+
+function removeCanvas() {
+  popCanvas.firstChild.remove();
+  popCanvas.firstChild.remove();
+  scene.dispose();
+  engine.dispose();
+}
+
+function createCanvas() {
+  popCanvas.appendChild(canvas);
+}
